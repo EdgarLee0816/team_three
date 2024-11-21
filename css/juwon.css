@@ -1,0 +1,127 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+    body {
+        background-color: #FEE0A0;
+        color: #4D463D;
+    }
+
+    #j_layout {
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    #j_profile {
+        display: flex;
+        border: 3px solid #4D463D;
+        border-radius: 30px;
+        padding: 10px;
+        height: 300px;
+    }
+    #j_profile div{
+        flex:1;
+        border:2px dashed #4D463D;
+        border-radius: 20px;
+        margin:10px;
+    }
+
+    #j_profile h3{
+        font-size: 1.2rem;
+    }
+
+    #j_image {
+        width: 15vw;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #j_left {
+        margin-right: 5%;
+    }
+
+    /* -----------오른쪽 파트--------------- */
+    #j_right {        
+        flex: 1;
+    } 
+
+    h3 {
+        text-align: center;
+        margin: 2%;
+    } 
+
+    /* skill */
+    #j_skill {
+        border: 3px solid #4D463D;
+        border-radius: 30px;
+        font-size: 0.9em;
+        /* height: 300px; */
+        width: 50%;
+    } 
+
+    #j_skill h3{
+        font-size: 1.2rem;
+    }
+
+    #j_skill-container {
+        margin: 10%;
+    }
+
+    .j_skill {
+        margin-bottom: 5%;
+    }
+
+    .j_name {
+        font-weight: bold;
+    }
+
+    .j_percent {
+        float: right;
+    }
+
+    .j_skill-bar {
+        background-color: rgba(255, 255, 255, 0.j_7);
+        border-radius: 5px;
+        height: 10px;
+    }
+
+    .j_skill-progress {
+        background-color: #ED8A53;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    /* content */
+    #j_contact {
+        border: 3px solid #4D463D;
+        border-radius: 30px;
+        /* height: 250px; */
+        font-size: 0.9em;
+        text-align: center;
+        width: 50%;
+        
+    }
+
+    #j_contact h3{
+        font-size: 1.2rem;
+    }
+    
+
+    #j_contact img {
+        width: 8%;
+        position: relative;
+        top: 2%;
+        margin-right: 5%;
+        margin-top: 8%;
+        /* border:2px solid red; */
+        display: inline-block;
+    }
+    #j_skillcontact {
+        display: flex;
+        padding: 10px 0;
+        gap: 15px
+    }
+

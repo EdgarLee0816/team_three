@@ -2,62 +2,614 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width"> --> 
     <title>포트폴리오</title>
-
-    <link rel="stylesheet" href="css/port.css">
+    <link rel="stylesheet" href="css/port2.css">
+    <link rel="stylesheet" href="css/cla_style.css">
+    <link rel="stylesheet" href="css/juwon.css">
+    <link rel="stylesheet" href="css/back.css">
+    <link rel="stylesheet" href="css/da_css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="js/port.js"></script>
-
-
+    <!-- <script src="js/script.js"></script> -->
+    
 </head>
 <body>    
     <div id="layout">
         <!-- <p>스크롤 높이를 숫자로 표시하는 곳</p>  -->
-        <header id="head">
+        <header id="head">            
             <h1>안녕하세요</h1>
             <!-- <img src="images/Woodbg(W1080i).jpg" id="bg"> -->
-                <section id="sec1">
+                <section id="top_menu">
                     <div id="name">
                         <h2>Team-Three</h2>
                     </div>
+                    
                     <nav id="nav">
-                        <a href="#Team"><b>Team</b></a>
-                        <a href="#ju"><b>윤주원</b></a>
-                        <a href="#da"><b>송다검</b></a>
-                        <a href="#ji"><b>백지현</b></a>
-                        <a href="#lee"><b>이창신</b></a>
-                        <a href="#cal"><b>팀친목갤린더</b></a>
+                        <a id="nav_team" href="#"><b>Team</b></a>
+                        <a class="mem_a" id="ju_m" href="#" alt="주원"><b>주원</b></a>
+                        <a class="mem_a" id="da_m" href="#" alt="다검"><b>다검</b></a>
+                        <a class="mem_a" id="ji_m" href="#" alt="지현"><b>지현</b></a>
+                        <a class="mem_a" id="le_m" href="#" alt="창신"><b>창신</b></a>
+                        <a href="#cal"><b>Team-Calendar</b></a>                        
                     </nav>
+                    <nav class="nav">
+                        <span id="span_btn" class="material-symbols-outlined">menu</span>
+                        <ul id="nav_ul">
+                            <li>
+                                <a class="ul_left" href="#yoon_right">주원</a><br>
+                                <a class="ul_left" href="#song_right">다검</a><br>
+                                <a class="ul_left" href="#back_right">지현</a><br>
+                                <a class="ul_left" href="#lee_right">창신</a>
+                            </li>                           
+                        </ul>
+                    </nav>                 
                 </section>
-                <div id="home">
-                    <p>1111</p>            
-                </div>
+
+                <div id="team">                    
+                    <div id="left">
+                        <div class="t_left">
+                            <div class="b_s_left">                    
+                                <div class="logo">
+                                    <img src="images/line-logo.png" alt="logo">
+                                </div>
+                                <div class="b_text">
+                                    <h2>윤-주원</h2>
+                                    <p>라인컴퓨터아트학원</p>
+                                    <p>Front-End</p>
+                                    <img src="images/More_Detail(Black).png" alt="디테일버튼">
+                                </div>                                
+                            </div>
+                            <div class="b_s_right">
+                                <img class="rightpic" src="images/주원-ANI.png" alt="윤주원_카드사진">
+                            </div>
+                        </div> 
+                        
+                        <div class="t_left">
+                            <div class="b_s_left">                    
+                                <div class="logo">
+                                    <img src="images/line-logo.png" alt="logo">
+                                </div>
+                                <div class="b_text">
+                                    <h2>송-다검</h2>
+                                    <p>라인컴퓨터아트학원</p>
+                                    <p>Front-End</p>                                    
+                                    <img src="images/More_Detail(Black).png" alt="디테일버튼">
+                                </div>                                
+                            </div>
+                            <div class="b_s_right">
+                                <img class="rightpic" src="images/dagom.png" alt="송다검_카드사진">
+                            </div>
+                        </div>
+
+                        <div class="t_left">  
+                            <div class="b_s_left">                    
+                                <div class="logo">
+                                    <img src="images/line-logo.png" alt="logo">
+                                </div>
+                                <div class="b_text">
+                                    <h2>백-지현</h2>
+                                    <p>라인컴퓨터아트학원</p>
+                                    <p>Front-End</p>
+
+                                    <img src="images/More_Detail(Black).png" alt="디테일버튼">
+
+                                </div>
+                            </div>
+                            <div class="b_s_right">
+                                <img class="rightpic" src="images/백지현-임시사진.png" alt="백지현_카드사진">
+                            </div>
+                        </div>  
+                         
+                        <div class="t_left">    
+                            <div class="b_s_left">                    
+                                <div class="logo">
+                                    <img src="images/line-logo.png" alt="logo">
+                                </div>
+                                <div class="b_text">
+                                    <h2>이-창신</h2>
+                                    <p>라인컴퓨터아트학원</p>
+                                    <p>Front-End</p>
+                                    
+                                    <img src="images/More_Detail(Black).png" alt="디테일버튼">
+                                </div>
+                                
+                            </div>
+                            <div class="b_s_right">
+                                <img class="rightpic" src="images/이창신-ANI.png" alt="백지현_카드사진">
+                            </div>
+                        </div>  
+                    </div>  
+                    <div id="right">                        
+                        <div id="team_right">
+                            <div id="t_layout">
+                                <div id="team_left">
+                                    <div id="t_image"><img src="images/팀이미지(임시).png" alt="팀사진"></div>                                    
+                                    <p id="typing"></p>                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div id="yoon_right" class="mem_right">
+                            <div id="j_layout">
+                                <div id="j_left">
+                                    <div id="j_image"><img src="images/주원-big.png" alt="얼굴 사진"></div>
+                                    <h3>프로필</h3>
+                                        <p>이름 : 윤주원</p>
+                                        <p>생년월일 : 2003.07.02</p>
+                                        <p>OOO대학교 IT인공지능학부 전공</p>
+                                </div>                        
+                                <div id="j_right">
+                                    <div id="j_profile">
+                                        <div>
+                                            <h3>Portfolio-1</h3>
+                                            <section id="ju_link1">
+                                                <a href="https://edgarlee0816.github.io/team-juwon/"><img src="images/juwon_link.png" alt="주원포트폴리오링크"></a>
+                                            </section>
+                                        </div>
+                                        <div>
+                                            <h3>Portfolio-2</h3>
+                                            <section id="ju_link2">
+                                                <a href="#"><br>준비중 입니다.</a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div id="j_skillcontact">
+                                        <div id="j_skill">
+                                            <h3>Skill</h3>
+                                            <div id="j_skill-container">
+                                                <div class="j_skill">
+                                                    <span class="j_name">HTML<span class="j_percent">80%</span></span>
+                                                    <div class="j_skill-bar">
+                                                        <div id="j_1" class="j_skill-progress" style="width: 0;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="j_skill">
+                                                    <span class="j_name">CSS<span class="j_percent">80%</span></span>
+                                                    <div class="j_skill-bar">
+                                                        <div id="j_2" class="j_skill-progress" style="width: 0;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="j_skill">
+                                                    <span class="j_name">JAVASCRIPT<span class="j_percent">60%</span></span>
+                                                    <div class="j_skill-bar">
+                                                        <div id="j_3" class="j_skill-progress" style="width: 0;"></div>
+                                                    </div>
+                                                </div>                                             
+                                                <div class="j_skill">
+                                                    <span class="j_name">ENGLISH<span class="j_percent">60%</span></span>
+                                                    <div class="j_skill-bar">
+                                                        <div id="j_4" class="j_skill-progress" style="width: 0;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="j_contact">
+                                            <h3>Contact</h3>
+                                            <br>
+                                            <a href="#"><img src="images/call.png" alt="call">010-0000-0000</a><br>
+                                            <a href="#"><img src="images/email.png" alt="email">yjw9062@naver.com</a>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div id="song_right" class="mem_right">
+                            <section id="photo">
+                                <div id="person">
+                                    <ul>
+                                        <li>
+                                            <h2>Name: dada</h2>
+                                        </li>
+                                        <li>
+                                            <div id="likelist">
+                                                <h2>Like</h2>
+                                                <ul>
+                                                    <li>맛있는 거<br>
+                                                        Something delicious
+                                                    </li>
+                                                    <li>집에서 쉬기<br>
+                                                        Resting at home
+                                                    </li>
+                                                    <li>게임하기<br>
+                                                        Playing games
+                                                    </li>
+                                                    <li>그외에 더 늘어나고 있습니다!<br>
+                                                        It's getting more and more!
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="images/dagom_big.png" alt="프로필사진2">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" <em>천천히 나아가는 주니어 개발자</em> "</p>
+                                </div>
+                            </section>
+                            <section>
+                                <div id="do">
+                                    <div>
+                                        <h3>language</h3>
+                                        <ul>
+                                            <li>HTML / CSS</li>
+                                            <li>Javascript</li>
+                                            <li>PHP / JSP</li>
+                                            <li>My SQL</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3>Tool</h3>
+                                        <ul>
+                                            <li>VS Code</li>
+                                            <li>Photo Shop</li>
+                                            <li>Illustrator</li>
+                                            <li>My SQL Workbench</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </section>
+                            <aside>
+                                <div id="contacts">
+                                    <div class="contact">
+                                        <a href="mailto:my e-mali@gmail.com">
+                                            <h3>E-mail</h3>
+                                        </a>
+                                    </div>
+                                    <div class="contact">
+                                        <a href="tel:+82 10-1234-1234">
+                                            <h3>Phone</h3>
+                                        </a>
+                                    </div>
+                                    <div class="contact">
+                                        <h3>WeChat</h3>
+                                    </div>
+                                    <div class="contact">
+                                        <h3>LINE</h3>
+                                    </div>
+                                    <a href="https://Mygit.github.io/Myrepositories/" target="_blank">
+                                        <div id="mygit">
+                                            <h3>
+                                                Git Link >>
+                                            </h3> 
+                                        </div>
+                                    </a>
+                                </div>                                    
+                            </aside>   
+                        </div>
+                        <div id="back_right" class="mem_right">
+                            <div id="b_layout">
+                                <div id="b_left">
+                                    <div id="b_image"><img src="images/mimi024.jpg" alt="얼굴 사진"></div>
+                                    <div>
+                                        <p>이름 : 백지현</p>
+                                        <p>생년월일 : 2000.00.00</p>
+                                        <p>OO대학교 국제문화대학 일본학과 전공</p>
+                                    </div>
+                                </div>
+                        
+                                <div id="b_right">
+                                    <div id="b_skill">
+                                        <h3 id="b_h3">SKILL</h3>
+                                        <div id="b_skill-container">
+                                            <div class="b_skill">
+                                                <span class="b_name">HTML<span class="b_percent">80%</span></span>
+                                                <div class="skill-bar">
+                                                    <div id="s_1" class="skill-progress"></div>
+                                                </div>
+                                            </div>
+                                            <div class="b_skill">
+                                                <span class="b_name">CSS<span class="b_percent">80%</span></span>
+                                                <div class="skill-bar">
+                                                    <div id="s_2" class="skill-progress" style="width:0;"></div>
+                                                </div>
+                                            </div><div class="b_skill">
+                                                <span class="b_name">JAVASCRIPT<span class="b_percent">60%</span></span>
+                                                <div class="skill-bar">
+                                                    <div id="s_3" class="skill-progress" style="width:0;"></div>
+                                                </div>
+                                            </div><div class="b_skill">
+                                                <span class="b_name">JAPANESE<span class="b_percent">90%</span></span>
+                                                <div class="skill-bar">
+                                                    <div id="s_4" class="skill-progress" style="width:0;"></div>
+                                                </div>
+                                            </div><div class="b_skill">
+                                                <span class="b_name">ENGLISH<span class="b_percent">60%</span></span>
+                                                <div class="skill-bar">
+                                                    <div id="s_5" class="skill-progress" style="width:0;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="b_certificate">
+                                        <h3>CERTIFICATE</h3>
+                                        <ul>
+                                            <li>컴퓨터그래픽스운용기능사<p>취득일:0000.00.00</p></li>
+                                            <li>전자출판기능사<p>취득일:0000.00.00</p></li>
+                                            <li>컴퓨터활용능력 2급<p>취득일:0000.00.00</p></li>
+                                            <li>JLPT 1급<p>취득일:0000.00.00</p></li>
+                                        </ul>
+                                    </div>  
+                                    <div id="b_project">
+                                        <h3>PROJECT</h3>
+                                        <a href="https://baekku-web.github.io/portfolio-2/%EC%A7%80%EB%B8%8C%EB%A6%AC(0829)/index.html" target="_blank">
+                                            <img src="images/ghibli-diary.png" alt="지브리다이어리 로고">
+                                        </a>
+                                        <b>▲ click ▲</b>                                        
+                                        <p>"지브리스튜디오"의 영화의 이미지를 사용하여<br>
+                                            일기나 메모를 작성할 수 있는 웹사이트입니다.</p>
+                                    </div>
+                    
+                                    <div id="b_contact">
+                                        <h3>CONTACT</h3>
+                                        <br>
+                                        <a href="#"><img src="images/call.png" alt="call">010-0000-0000</a>
+                                        <a href="#"><img src="images/mail.png" alt="mail">jihyun@naver.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="lee_right" class="mem_right">
+                            <div id="lee_layout">
+                                <div id="lee_main">
+                                    <div id="chang_left">
+                                        <div id="chang_flex">
+                                            <div id="certificate" class="stat">
+                                                <h3>CERTIFICATE</h3>
+                                                <ul>
+                                                    <li>전기공사산업기사<span>취득일:0000.00.00</span></li><br>
+                                                    <li>PC정비사2급<span>취득일:0000.00.00</span></li><br>
+                                                    <li>정보처리기능사<span>취득일:0000.00.00</span></li><br>
+                                                    <li>정보기기운용기능사<span>취득일:0000.00.00</span></li><br>
+                                                    <li>승강기기능사<span>취득일:0000.00.00</span></li>
+                                                </ul>
+                                            </div>
+                                            <div id="contact" class="stat">
+                                                <h3>CONTACT</h3>
+                                                <br>
+                                                <a href="#"><br><img src="images/call.png" alt="call">&nbsp;010-0000-0000</a><br>
+                                                <a href="#"><br><img src="images/mail.png" alt="mail">&nbsp;edgarlee0816@edgar.myds.me</a>
+                                            </div>
+                                        </div>
+
+                                        <div id="project">
+                                            <div>
+                                                <h3>Portfolio-1</h3>
+                                                <section id="lee_link1">
+                                                    <a href="https://edgarlee0816.github.io/Strawberryday/"><img src="images/딸기의하루link.png" alt="창신포트폴리오링크1"></a>
+                                                    <p>[Web]딸기의하루</p>
+                                                </section>
+                                            </div>
+                                            <div>
+                                                <h3>Portfolio-2</h3>
+                                                <section id="lee_link2">
+                                                    <a href="https://edgarlee0816.github.io/mentee-mentor/"><img src="images/맨티펫멘토link.png" alt="창신포트폴리오링크2"></a>
+                                                    <p>[Mobile]멘티펫멘토</p>
+                                                </section>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div id="chang_right">
+                                        <img src="images/창신-ANI.png" alt="증명사진">
+                                        <p>성명 : 이창신</p>                                        
+                                        <p>동양공업전문대학:전기전자통신공학부-전기시스템 전공</p>
+                                        <p>前 LG Display - Technician (2009~2020)</p>
+                                        <p>前 스타닷컴 대표 - (2020~2022)</p>
+                                    </div>                
+                                </div>                                                                                              
+                            </div>
+                        </div>                    
+                    </div>         
+                </div> 
         </header>
-        <main>            
-            <div id="Team">
-                <p></p>            
-            </div>       
-        
-            <div id="ju">
-                <p></p> 
-            </div>
-            
-            <div id="da">
-                <p></p> 
-            </div>
-
-            <div id="ji">
-                      
-            </div>
-
-            <div id="lee">
-                      
-            </div>
-
+        <main>             
             <div id="cal">
-                      
+                <button type="'button" class="material-symbols-outlined">arrow_back_ios</button>
+                <section class="calendar">
+                    <h2>10월</h2>
+                    <div class="header">
+                        <div class="sun">Sun.</div>
+                        <div>Mon.</div>
+                        <div>Tue.</div>
+                        <div>Wed.</div>
+                        <div>Tur.</div>
+                        <div>Fri.</div>
+                        <div class="sat">Sat.</div>
+                    </div>
+                    <div class="days">
+                        <div class="day empty">29</div>
+                        <div class="day empty">9/30</div>
+                        <div class="day">1</div>
+                        <div class="day">2</div>
+                        <div class="day">3</div>
+                        <div class="day">4</div>
+                        <div class="day">5</div>
+                        <div class="day">6</div>
+                        <div class="day">7</div>
+                        <div class="day">8</div>
+                        <div class="day">9</div>
+                        <div class="day">10</div>
+                        <div class="day">11
+                            <p class="content">- 팀 기획, 점심 미팅</p>
+                            <span class="detail_content">1:20 / 석석석</span>
+                        </div>
+                        <div class="day">12</div>
+                        <div class="day">13</div>
+                        <div class="day">14</div>
+                        <div class="day">15</div>
+                        <div class="day">16</div>
+                        <div class="day">17</div>
+                        <div class="day">18</div>
+                        <div class="day">19</div>
+                    </div>
+                    <!-- 뒷 주간 -->
+                    <div class="days">
+                        <div class="day">20</div>
+                        <div class="day">21</div>
+                        <div class="day">22</div>
+                        <div class="day">23</div>
+                        <div class="day">24</div>
+                        <div class="day">25</div>
+                        <div class="day">26</div>
+                        <div class="day">27</div>
+                        <div class="day">28</div>
+                        <div class="day">29</div>
+                        <div class="day">30</div>
+                        <div class="day">31</div>
+                        <div class="day empty">11/1</div>
+                        <div class="day empty">2</div>
+                        <div class="day empty">3</div>
+                        <div class="day empty">4</div>
+                        <div class="day empty">5</div>
+                        <div class="day empty">6</div>
+                        <div class="day empty">7</div>
+                        <div class="day empty">8</div>
+                        <div class="day empty">9</div>
+                        
+                    </div>
+                </section>
+                <section class="calendar">
+                    <h2>11월</h2>
+                    <div class="header">
+                        <div class="sun">Sun.</div>
+                        <div>Mon.</div>
+                        <div>Tue.</div>
+                        <div>Wed.</div>
+                        <div>Tur.</div>
+                        <div>Fri.</div>
+                        <div class="sat">Sat.</div>
+                    </div>
+                    <div class="days">
+                        <div class="day empty">27</div>
+                        <div class="day empty">28</div>
+                        <div class="day empty">29</div>
+                        <div class="day empty">30</div>
+                        <div class="day empty">10/31</div>
+                        <div class="day">1
+                            <p class="content">- 사전 미팅</p>
+                            <span class="detail_content"> 14:00 / 라인학원 608호</span>
+                        </div>
+                        <div class="day">2</div>
+                        <div class="day">3</div>
+                        <div class="day">4</div>
+                        <div class="day">5
+                            <p class="content">- 팀 기획 1차 회의</p>
+                            <span class="detail_content"> 10:00 / 라인학원 608호 / 주제 공유 및 계획 설계</span>
+                        </div>
+                        <div class="day">6</div>
+                        <div class="day">7
+                            <p class="content">- 팀 기획 2차 회의</p>
+                            <span class="detail_content"> 10:30 / 라인학원 608호 / 주제 확성 및 계획 수립</span>
+                            <p class="content">- 3팀 점심회식</p>
+                            <span class="detail_content"> 12:00 / 김밥천국</span>
+                        </div>
+                        <div class="day">8</div>
+                        <div class="day">9</div>
+                        <div class="day">10</div>
+                        <div class="day">11</div>
+                        <div class="day">12</div>
+                        <div class="day">13</div>
+                        <div class="day">14</div>
+                        <div class="day">15</div>
+                        <div class="day">16</div>
+                    </div>
+                    <!-- 뒷 주간 -->
+                    <div class="days">
+                        <div class="day">17</div>
+                        <div class="day">18</div>
+                        <div class="day">19</div>
+                        <div class="day">20
+                            <p class="content">- 팀 기획 3차 회의</p>
+                            <span class="detail_content"> 11:30 / 라인학원 608호 / 중간 점검</span>
+                            
+                        </div>
+                        <div class="day">21</div>
+                        <div class="day">22</div>
+                        <div class="day">23</div>
+                        <div class="day">24</div>
+                        <div class="day">25</div>
+                        <div class="day">26</div>
+                        <div class="day">27</div>
+                        <div class="day">28</div>
+                        <div class="day">29</div>
+                        <div class="day">30</div>
+                        <div class="day empty">12/1</div>
+                        <div class="day empty">2</div>
+                        <div class="day empty">3</div>
+                        <div class="day empty">4</div>
+                        <div class="day empty">5</div>
+                        <div class="day empty">6</div>
+                        <div class="day empty">7</div>
+                    </div>
+                </section>
+                <section class="calendar">
+                    <h2>12월</h2>
+                    <div class="header">
+                        <div class="sun">Sun.</div>
+                        <div>Mon.</div>
+                        <div>Tue.</div>
+                        <div>Wed.</div>
+                        <div>Tur.</div>
+                        <div>Fri.</div>
+                        <div class="sat">Sat.</div>
+                    </div>
+                    <div class="days">
+                        <div class="day">1</div>
+                        <div class="day">2</div>
+                        <div class="day">3</div>
+                        <div class="day">4</div>
+                        <div class="day">5</div>
+                        <div class="day">6</div>
+                        <div class="day">7</div>
+                        <div class="day">8</div>
+                        <div class="day">9</div>
+                        <div class="day">10</div>
+                        <div class="day">11</div>
+                        <div class="day">12</div>
+                        <div class="day">13</div>
+                        <div class="day">14</div>
+                        <div class="day">15</div>
+                        <div class="day">16</div>
+                        <div class="day">17</div>
+                        <div class="day">18</div>
+                        <div class="day">19</div>
+                        <div class="day">20</div>
+                        <div class="day">21</div>
+                    </div>
+                    <!-- 뒷 주간 -->
+                    <div class="days">
+                        <div class="day">22</div>
+                        <div class="day">23</div>
+                        <div class="day">24</div>
+                        <div class="day">25</div>
+                        <div class="day">26</div>
+                        <div class="day">27</div>
+                        <div class="day">28</div>
+                        <div class="day">29</div>
+                        <div class="day">30</div>
+                        <div class="day">31</div>
+                        <div class="day empty">1/1</div>
+                        <div class="day empty">2</div>
+                        <div class="day empty">3</div>
+                        <div class="day empty">4</div>
+                        <div class="day empty">5</div>
+                        <div class="day empty">6</div>
+                        <div class="day empty">7</div>
+                        <div class="day empty">8</div>
+                        <div class="day empty">9</div>
+                        <div class="day empty">10</div>
+                        <div class="day empty">11</div>
+                    </div>
+                </section>
+                <button type="'button" class="material-symbols-outlined">arrow_forward_ios</button>
             </div>
+            <section id="details">
+                <h3>상세 내용</h3>
+                <div></div>
+        </section>
         </main>
     </div>    
+    <script src="js/script.js"></script>
+
 </body>
 </html>

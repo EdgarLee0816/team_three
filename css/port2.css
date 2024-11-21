@@ -1,0 +1,533 @@
+@charset "utf-8";
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+img { 
+    display:block;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Color 색상기준표 */
+
+/* #FEF3C6
+#FEE0A0
+#FDAC6D
+#ED8A53
+#4D463D
+#BCDDBE */
+
+
+/********** Scroll 부드럽게 이동 ***********/
+
+html { 
+    scroll-behavior: smooth; 
+    overflow: auto;
+    background-color: #FEE0A0;
+    /* border:10px solid yellowgreen; */
+    /* overflow-x:hidden; */
+}
+#layout{
+    overflow-x: hidden;
+}
+
+/***************** 헤더 *******************/
+
+#head h1{ display: none; }
+#top_menu{
+    display: flex;
+    /* justify-content: center;*/
+    align-items: center; 
+    text-align: center;
+    height: 100px;
+}
+#name{
+    flex: 1;
+}
+
+.nav{
+    /* border:2px solid red; */
+    height: 100px;
+    width:100px;
+    margin-top: 70px;
+    margin-right:200px;
+    z-index: 1;
+}
+
+.nav ul {
+    height: 0;
+    /* border:2px solid blue; */
+    overflow: hidden;
+    transition: height 0.3s ease; 
+    z-index: 1;
+}
+
+.nav ul li{
+    height: 0;
+    /* border:2px solid red; */
+    overflow: hidden;
+    transition: height 0.3s ease; 
+    z-index: 1;
+}
+
+
+#nav{
+    flex:0.5;
+}
+
+#nav span.material-symbols-outlined{
+    display: block;
+    margin-right: 50px;
+}
+#nav a{
+    flex: 1;
+    display: none;
+}
+/************* team ***************/
+#team{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+#typing {
+    text-align: center; 
+    margin-top: 20px;  
+    margin-bottom: 50px;
+    
+}
+
+#left{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.6;
+    display: none;
+}
+.t_left{
+    position: relative;
+    max-width: 400px;
+    width: 80%;
+    height: fit-content;
+    background: url('../images/개인배경.png') no-repeat content-box;
+    display: flex;
+    margin: 1% 30%;
+    align-items: center;
+    padding: 0.5% 0.5%;
+    transition: all 0.2s;
+    border-radius: 20px;
+}
+
+.t_left:hover{
+    border:5px solid #FDAC6D;
+    border-radius: 20px;    
+}
+
+#t_image { 
+    width:700px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-top:50px;
+}
+
+/* .p_img */
+.b_s_left{
+    flex: 2;
+}
+.logo{
+    width: 20%;
+    height: 30%;
+    padding: 2%;
+}
+.logo> img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.b_text{
+    float: right;
+    margin-bottom: 5%;
+}
+
+.b_text p{
+    font-size: 0.8rem;
+
+}
+
+.b_s_right{
+    flex: 1;
+}
+.rightpic{
+    width: 100%;
+    height: 100%;
+}
+#right{
+    flex: 1.4;
+    position: relative;
+}
+#yoon_right, #song_right, #back_right,#lee_right{
+    width: 100%;
+    /* margin: 5%; */
+    margin: auto;
+    padding: 5%;
+
+}
+#yoon_right{
+    left: 0;
+    width: 100%;
+    background-color: #e9c985;
+    border-radius: 30px;
+
+}
+#song_right{
+    left: 100%;
+    width: 100%;
+    background-color: #cfad63;
+    /* border:2px solid red; */
+    border-radius: 30px;
+
+}
+#back_right{
+    left: 100%;
+    background-color: #fcd073;
+    border-radius: 30px;
+}
+
+#lee_right {
+    /* border:2px solid red; */
+    height: 800px!important;
+    background-color:#e9c985;
+    position:relative;
+    border-radius: 30px;
+}
+
+#lee_layout {
+    /* border:2px solid blue; */
+    position:relative;
+    height: 700px;
+}
+
+#lee_main {
+    display: flex;
+    justify-content:space-between;
+    /* padding:50px; */
+    /* border:2px solid violet; */
+}
+
+#certificate {
+    padding:10%;
+}
+
+#certificate ul {  
+    margin-top: 5%;
+}
+
+#certificate li {
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
+
+#certificate span {
+    /* float: right; */
+    /* margin-top:20px; */
+    text-align:right;
+}
+
+#certificate ul, li, span{ 
+    font-size: 1rem;
+    display: inline;
+    /* border:2px solid red; */
+}
+.stat {
+    border:3px solid #FDAC6D;
+    max-width:400px;
+    width:80%;
+    border-radius: 20px;
+    padding:0px 50px 50px 50px;
+    /* max-height: 900px; */
+    height: 290px !important;
+    position:relative;
+    margin:20px 20px 20px 20px;
+}
+
+.stat h3 {
+    font-size: 1.2rem;
+}
+
+#chang_left {
+    display: flex;
+    /* border:2px solid goldenrod; */
+    flex:2;
+    position:relative;        
+}
+
+#chang_right { 
+    max-width: 500px;    
+    position:relative;
+    /* border:2px solid red; */  
+    flex:0.8;
+    
+}
+
+#chang_right img {    
+    margin-top: 120px;
+    /* margin-left: -20%; */
+}
+
+#chang_right p{
+    font-size: 0.8rem;
+    margin-right: 50px;
+    text-align: flex-end;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact h3{
+    margin-top: 50px;
+}
+
+#contact a{
+    font-size: 1.2rem;
+}
+
+#contact img{
+     width:5%;
+     text-align: center;   
+     display: inline-block; 
+}
+
+#chang_flex{
+    height: 250px;
+}
+
+#project { 
+    height: 500px !important;    
+    position:relative;
+    width:300px;    
+}
+
+#project div { 
+    border:3px dashed #FDAC6D;
+    border-radius: 20px;
+    height: 280px;
+    margin:25px;
+}
+
+#lee_text{    
+    /* border:2px solid red; */
+    display:block;  
+}
+
+#ju_link1 { 
+    padding:10px;
+}
+
+#ju_link1 img {
+
+    border-radius: 20px;
+}
+
+#ju_link2 {
+    text-align: center;
+    margin-top:50px;
+}
+
+#lee_link1 { 
+    padding:10px;        
+    width:100%;          
+    margin:auto; 
+    text-align: center;
+}
+
+#lee_link2 { 
+    padding:10px;       
+    width:100%;
+    margin:auto; 
+    text-align: center;       
+}
+
+#lee_link1 img {
+    border-radius: 20px;
+}
+
+#lee_link2 img {
+    border-radius: 20px;
+}
+
+
+@media (min-width: 1001px) {
+    #top_menu{
+        display: flex;
+        text-align: center;
+    }
+    #name{
+        flex: 1;
+    }
+    #nav{
+        flex:3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #nav a{
+        flex: 1;
+        animation: fadeIn 1s forwards 1.8s;
+        opacity: 0;
+        display: block;
+    }
+    .nav span.material-symbols-outlined, #nav_ul {
+        display: none;
+    }
+    #left{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: center;
+        flex: 0.6;
+        /* display: none; */
+    }
+    #team{
+        flex-direction: row;
+    }
+    #yoon_right, #song_right, #back_right,#lee_right{
+        /* position: relative;
+        left: 100%; */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #yoon_right{
+        left: 100%;
+        width: 100%;    
+    }
+
+    #ju_link1 { 
+        padding:10px;
+    }
+
+    #ju_link1 img {
+
+        border-radius: 20px;
+    }
+
+    #lee_link1 { 
+        padding:10px;        
+        width:70%;          
+        margin:auto; 
+        text-align: center;
+    }
+
+    #lee_link2 { 
+        padding:10px;       
+        width:70%;
+        margin:auto; 
+        text-align: center;       
+    }
+
+    #lee_link1 img {
+        border-radius: 20px;
+    }
+
+    #lee_link2 img {
+        border-radius: 20px;
+    }
+
+    #song_right{
+        left: 100%;
+        width: 100%;
+    }
+    #back_right{
+        left: 100%;
+    
+    }
+    #b_layout {
+        display: flex;
+        /* height: 100vh; */
+        /* justify-content: center; */
+        align-items: center;
+        /* overflow: hidden; */
+        /* text-align: center; */
+        width: 100%;
+       
+    }
+    #lee_right{
+        left:100%;
+        /* width:100%;  */ 
+        height: 500px;     
+    } 
+    .stat {
+        border:3px solid #FDAC6D;
+        max-width:500px;
+        width:100%;
+        border-radius: 20px;
+        padding:0px 50px 50px 50px;        
+        height: 70%;
+        position:relative;
+        margin:20px 20px 20px 20px;
+    }
+    #project { 
+        height:320px;
+        margin-left: 20px;
+        position:relative;
+        width:400px;
+        margin-top:10px;
+    }
+    #certificate {
+        padding:5%;
+    }    
+    #certificate ul {  
+        margin-top: 5%;
+    }    
+    #certificate li {
+        font-size: 0.8rem;
+        margin-top: 5%;
+    }    
+    #certificate span {
+        float: right;
+        /* margin-top:20px; */
+        text-align:right;
+    }    
+    #certificate ul, li, span{ 
+        font-size: 0.8rem;
+        display: inline;
+        /* border:2px solid red; */
+    }
+    #contact {
+        text-align: center;
+    }    
+    #contact h3{
+        margin-top: 20px;
+    }    
+    #contact a{
+        font-size: 1rem;
+    }    
+    #contact img{
+         width:5%;
+         text-align: center;   
+         display: inline-block; 
+    }
+    #chang_right img {    
+        margin-top: 80px;
+        /* margin-left: -20%; */
+    }
+    #team_right.active {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn{
+
+    from {
+        opacity:0;
+    }
+
+    to {
+        opacity:1;
+    }
+}
